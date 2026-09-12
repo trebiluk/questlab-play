@@ -1,1 +1,37 @@
-<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>QuestLab</title></head><body><p>Loading full file next.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1b365d" />
+  <title>QuestLab — Chromebook</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">QUEST<em>LAB</em></div>
+    <div id="top-meta">Solvay MS · Technology · Chromebook</div>
+    <button class="btn ghost" id="btn-home" type="button">Home</button>
+  </header>
+  <section id="screen-landing" class="wrap">
+    <div class="hero">
+      <h1>Stop the robot.</h1>
+      <p class="hint">Chrome on your Chromebook. Keys: Tab · Enter · 1 2 3</p>
+    </div>
+    <div class="card" style="max-width:480px;margin:0 auto;">
+      <label>Class code</label>
+      <input id="join-code" value="QUEST4" maxlength="12" autocomplete="off" />
+      <label>Name</label>
+      <input id="join-alias" placeholder="Jordan" maxlength="20" autocomplete="off" />
+      <div class="row" style="margin-top:16px;">
+        <button class="btn" id="btn-student" type="button">Student</button>
+        <button class="btn navy" id="btn-teacher" type="button">Teacher</button>
+      </div>
+    </div>
+  </section>
+  <p style="text-align:center">If this is all you see, styles/app failed to load. Use the Classroom link after Pages is on.</p>
+  <script src="app.js"></script>
+</body>
+</html>
